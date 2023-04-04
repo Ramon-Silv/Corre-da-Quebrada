@@ -10,6 +10,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 /*MENU*/
 header{
     position: absolute;
@@ -235,21 +239,41 @@ footer .rodape{
 }
 
 .rodape .cont_rodape1{
+    width: 22%;
+    height: 65%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.rodape .cont_rodape1 a{
-    float: left;
+.cont_rodape1 ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% 0 0 -11%;
+}
+
+.cont_rodape{
+    width: 20%;
+    height: 50%;
+}
+
+.cont_rodape p{
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .direitos {
-    background-color: aquamarine;
     width: 100%;
     height: 10%;
     text-align: center;
     font-size: 17px;
+}
+
+.direitos span:hover{
+    color: rgb(0, 166, 255);
+    cursor: pointer;
+    transition: 1s;
 }
 
 #whats{

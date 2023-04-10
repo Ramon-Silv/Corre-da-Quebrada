@@ -1,0 +1,162 @@
+/*MENU*/
+header{
+    position: relative;
+    margin-top: 0;
+    background: linear-gradient(270deg, #d9bd76 0, #dcbc6c 25%, #d8b45c 50%, #dab351 75%, #d7ad41 100%);
+}
+
+/*estilo adicionado no header_menu_studio ao rolar*/
+#header_menu_studio.ativo{
+    background: #f2f2f2;
+    position: fixed;
+    z-index: 3;
+}
+
+/*SEÇÃO SOBRE*/
+#alrahair{
+    z-index: 1;
+    width: 100%;
+    height: 70vh;
+    background-color: transparent;
+}
+
+.alra_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.alrahair_txt{
+    position: relative;/*para posicionar um elemento filho com posição absoluta, o contêiner pai deve ser definido como relativo*/
+    width: 100%;
+    height: 65%;
+    padding: 4%;
+    background-color: transparent;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.1em;
+}
+  
+.alrahair_txt::before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: linear-gradient(135deg, rgba(220, 188, 108, 0.6) 50%, rgba(243, 160, 154, 0.2));
+    z-index: -1;
+    transition: transform 2s ease-out;
+}
+
+.alrahair_txt::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.alrahair_txt:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*box shadow que se mexe na imagem*/
+
+.alrahair_txt h1, p{
+    width: 45%;
+}
+
+.alrahair_img{
+    position: absolute;
+    width: 50%;/**/
+    z-index: 1;
+    left: 50%;
+}
+
+.alrahair_img img{
+    width: 85%;
+}
+
+
+/*SEÇÃO DE GALERIA*/
+#galeria{
+    transition: all 1s;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    padding: 2%;
+}
+
+#galeria:hover{
+    background-color: rgba(220, 188, 108, 0.6);
+    transition: 2s all;
+}
+
+#galeria h1{
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    transition: all 1s;
+}
+
+#galeria h1:hover{
+    color: #ffffff;
+    transition: all 2s;
+}
+
+.container_galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2%;
+    padding-top: 3%;
+    background-color: #efe0dd;
+    border-radius: 50px;
+}
+
+div.box {
+    margin: 2%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+div.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.box:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+div.colum-one, div.colum-two, div.colum-three {
+    display: flex;
+    flex-direction: column;
+}
+
+div.box img {
+    transition: transform 1s ease;
+    border-radius: 10px;
+}
+
+div.box img:hover {
+    transform: scale(1.1);
+}
+
+div.onebox, div.fivebox {
+    height: 300px;
+}
+
+div.twobox, div.threebox {
+    height: 400px;
+}
+
+footer{
+    margin-top: 45%;
+}

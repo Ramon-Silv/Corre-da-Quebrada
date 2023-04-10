@@ -2,7 +2,8 @@
 header{
     position: relative;
     margin-top: 0;
-    background: linear-gradient(270deg, #d9bd76 0, #dcbc6c 25%, #d8b45c 50%, #dab351 75%, #d7ad41 100%);
+    background: linear-gradient(270deg, #F2D1CE 0, #F2C3B1 25%,
+    #f3a09a 75%, #f36d6e 100%);
 }
 
 /*estilo adicionado no header_menu_studio ao rolar*/
@@ -49,7 +50,7 @@ header{
     height: 100%;
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
-    background: linear-gradient(135deg, rgba(220, 188, 108, 0.6) 50%, rgba(243, 160, 154, 0.2));
+    background: linear-gradient(135deg, rgba(243, 160, 154, 0.6) 50%, rgba(243, 160, 154, 0.2));
     z-index: -1;
     transition: transform 2s ease-out;
 }
@@ -90,7 +91,7 @@ header{
 }
 
 #galeria:hover{
-    background-color: rgba(220, 188, 108, 0.6);
+    background-color: rgba(243, 160, 154, 0.6);
     transition: 2s all;
 }
 
@@ -117,7 +118,7 @@ header{
 }
 
 div.box {
-    margin: 2%;
+    margin: 4%;
     border-radius: 10px;
     overflow: hidden;
     transition: all 0.5s;
@@ -131,9 +132,10 @@ div.boxes {
 
 div.box:hover {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(217, 189, 118, 0.9);
 }
 
-div.colum-one, div.colum-two, div.colum-three {
+div.column{
     display: flex;
     flex-direction: column;
 }
@@ -156,5 +158,5 @@ div.twobox, div.threebox {
 }
 
 footer{
-    margin-top: 45%;
+    margin-top: 47%;
 }

@@ -2,7 +2,8 @@
 header{
     position: relative;
     margin-top: 0;
-    background: linear-gradient(270deg, #d9bd76 0, #dcbc6c 25%, #d8b45c 50%, #dab351 75%, #d7ad41 100%);
+    background: linear-gradient(270deg, #F2D1CE 0, #F2C3B1 25%,
+    #f3a09a 75%, #f36d6e 100%);
 }
 
 /*estilo adicionado no header_menu_studio ao rolar*/
@@ -21,7 +22,7 @@ header{
     padding: 5%;
 }
 
-#txt_informativo span{
+#txt_informativo span, .txt_outros span, .txt_marcas span{
     font-family: Dancing Script;
     font-size: 1.2em;
     font-weight: 600;
@@ -34,30 +35,29 @@ header{
 }
 
 #tratamentos img{
-    filter: opacity(50%);
+    filter: opacity(70%);
     border-radius: 10px;
+    transition: 1s all;
 }
 
 #tratamentos img:hover{
     filter: none;
+    transition: .5s all;
 }
 
 #tratamentos img:first-child{
     width: 35%;
     transform: translate(10%, -3%);
-    animation: imganima1 infinite 10s;
 }
 
 #tratamentos img:nth-child(2){
     width: 30%;
     transform: translate(20%, 90%);
-    animation: imganima2 infinite 15s;
 }
 
 #tratamentos img:last-child {
     width: 30%;
     transform: translate(-5%, -50%);
-    animation: imganima3 infinite 13s;
 }
 
 .cont-card{
@@ -75,8 +75,9 @@ header{
     text-align: center;
     font-size: 1.2em;
     padding: 1% 0;
-    background-color: #d9bd76;
+    background-color: #f29b9b;
     border-radius: 15px;
+    border: 1px solid #d9bd76;
 }
 
 .card h1{
@@ -96,43 +97,6 @@ header{
     cursor: pointer;
 }
 
-/*
-@keyframes imganima1 {
-    0%{
-        transform: translate(10%, 30%);
-    }
-    50%{
-        transform: translate(10%, 2%);
-    }
-    100%{
-        transform: translate(10%, 30%);
-    }
-}
-
-@keyframes imganima2 {
-    0%{
-        transform: translate(20%, 40%);
-    }
-    50%{
-        transform: translate(20%, 75%);
-    }
-    100%{
-        transform: translate(20%, 40%);
-    }
-}
-
-@keyframes imganima3 {
-    0%{
-        transform: translate(-5%, -5%);
-    }
-    50%{
-        transform: translate(-5%, -50%);
-    }
-    100%{
-        transform: translate(-5%, -5%);
-    }
-}*/
-
 #outros-tratamentos{
     width: 100%;
     height: 80vh;
@@ -144,19 +108,13 @@ header{
     padding: 1% 5%;
 }
 
-.txt_outros span{
-    font-family: Dancing Script;
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
 .cards-servicos{
     width: 100%;
     height: 80%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #F2D091;
+    background-color: #ebbdbd;
 }
 
 .cards-servicos ul{
@@ -167,6 +125,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid rgba(217, 189, 118, 0.9);
 }
 
 .outros{
@@ -176,7 +135,7 @@ header{
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    background-color: #d9bd76;
+    background-color: #f29b9b;
     border-radius: 15px;
     border: 1px rgba(217, 189, 118, 0.9) solid;
     font-size: 1.2em;
@@ -185,4 +144,52 @@ header{
 .outros h1{
     color: #ffffff;
     padding: 5% 0;
+}
+
+#marcas{
+    width: 100%;
+    height: 60vh;
+}
+
+#marcas .txt_marcas{
+    width: 100%;
+    text-align: center;
+    padding: 4% 0 0 1%;
+}
+
+#marcas .div-marcas{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 2%;
+    background-color: #f7baba4b;
+}
+
+.div-marcas .card-marcas{
+    width: 19%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: #d9bd76 1px solid;
+    display: flex;
+    align-items: center;
+}
+
+.card-marcas img{
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.card-marcas3, .card-marcas4, .card-marcas5{
+    width: 19%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #d9bd76 1px solid;
 }

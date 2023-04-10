@@ -4,12 +4,12 @@ window.addEventListener('scroll', Scrollativo);//adicionando evento de rolagem
         let menu = document.querySelector('#header_menu_studio');//retorna o primeiro elemento do documento com id menu
         let li = document.getElementsByClassName("li_menu");//returns a collection(array) of elements with a specified class name(s). É necessário especificar os elementos
 
-        menu.classList.toggle('ativo', scrollY > 5);
-        li[0].classList.toggle('ativo', scrollY > 5);//elementos do array começam em zero
-        li[1].classList.toggle('ativo', scrollY > 5);
-        li[2].classList.toggle('ativo', scrollY > 5);
+        menu.classList.toggle('ativo', scrollY > 2);
+        li[0].classList.toggle('ativo', scrollY > 2);//elementos do array começam em zero
+        li[1].classList.toggle('ativo', scrollY > 2);
+        li[2].classList.toggle('ativo', scrollY > 2);
         
-        if (window.scrollY > 5) {
+        if (window.scrollY > 2) {
             document.getElementById("img_menu").src= "../assets//img/logo-tesoura1.png";
             document.getElementsByClassName("btn_menu")[0].style.color= "#000000";
             document.getElementsByClassName("btn_menu")[1].style.color= "#000000";
